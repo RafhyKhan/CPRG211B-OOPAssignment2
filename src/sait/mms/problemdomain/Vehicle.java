@@ -1,4 +1,4 @@
-package sait.mms.manager;
+package sait.mms.problemdomain;
 
 public class Vehicle {
 
