@@ -44,6 +44,7 @@ public class VehicleManager {
 				case '6':
 					v = parsePickupTruck(parts);
 					break;
+					
 			}
 
 			if (v != null) vehicles.add(v);
