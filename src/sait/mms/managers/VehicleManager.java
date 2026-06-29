@@ -181,7 +181,7 @@ public class VehicleManager {
 		for (Vehicle v : vehicles) {
 			if (v instanceof Hatchback) {
 				Hatchback h = (Hatchback) v;
-				if (h.getHatchType().equalsIgnoreCase(code)) System.out.println(h);
+				if (h.getHatchBackType().equalsIgnoreCase(code)) System.out.println(h);
 			}
 		}
 	}
@@ -192,7 +192,7 @@ public class VehicleManager {
 		System.out.println("Matching Vehicles:");
 		for (Vehicle v : vehicles) {
 			if (v instanceof SUV) {
-				if (v.getDrivetrain().equalsIgnoreCase(code)) System.out.println(v);
+				if (v.getDriveTrain().equalsIgnoreCase(code)) System.out.println(v);
 			}
 		}
 	}

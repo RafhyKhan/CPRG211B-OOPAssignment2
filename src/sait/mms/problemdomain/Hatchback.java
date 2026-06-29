@@ -18,24 +18,58 @@ public class Hatchback extends Vehicle {
 	
 
 	
-	//returning hatch back type String.
-	public String getHatchType() {
-		return hatchBackType;
+	//returns a string, altered, adding extra variables 
+	@Override
+	public String toString() {
+		
+		String hatchBackTypeDescription; 
+	
+		//Upper case it all for comparison in switch statement
+		String hatchBackTypeUpper = hatchBackType.toUpperCase();
+		
+		
+		//Changing return value based on given trunk size.
+		switch(hatchBackTypeUpper) {
+			case "L":
+				hatchBackTypeDescription = "Series Hybrid";
+				break;
+			case "S":
+				hatchBackTypeDescription = "Parallel Hybrid";
+				break;
+			case "M":
+				hatchBackTypeDescription = "Plug-in Hybrid";
+				break;
+			default:
+				hatchBackTypeDescription = hatchBackType;
+		}
+		
+		
+		//using common String so its in the right format. Than adding at the end, hatchBackTypeDescription
+        return commonToString() + String.format("%nHatch Type:  %s", hatchBackTypeDescription);
 	}
 	
 	
 	
-	//we are getting the super quantities from VEHICLE, than using that we append Hatch back type and return it as a string! same format
-	@Override
-	public String toString() {
-		return super.toString() + " | Hatch Type: " + hatchBackType;
+	//getter
+	public String getHatchBackType() {
+		return hatchBackType;
 	}
 
 	
-	//again getting super values from vehivle and changing format.
-	@Override
-	public String toFileFormat() {
-		return super.toFileFormat() + ";" + hatchBackType;
-	}
+	
+	//returning in proper format
+    @Override
+    public String toFileFormat() {
+        return String.join(";",
+            getCarId(), getVehicleType(), getSubType(),
+            String.valueOf(getSpeed()),
+            String.valueOf(getFuel()),
+            String.valueOf(getSeats()),
+            String.valueOf(getYear()),
+            getDriveTrain(),
+            String.valueOf(getPrice()),
+            String.valueOf(getQuantity()),
+            hatchBackType);
+    }
 	
 }
