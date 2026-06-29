@@ -4,6 +4,8 @@ import java.io.*;
 import java.util.*;
 import sait.mms.problemdomain.*;
 
+
+
 public class VehicleManager {
 
 	private static final String VEHICLES_FILE = "res/vehicles.txt";

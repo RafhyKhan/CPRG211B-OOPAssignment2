@@ -1,6 +1,10 @@
 package sait.mms.problemdomain;
 
 //abstract cause of the toFileFormat Absract method, its unique for each sub class
+/*
+ * Vehicle is the superclass. It creates the methods that other classes can call upon and alter if want.
+ * All common variables are stored here for each object instance
+ */
 public abstract class Vehicle {
 	
 	

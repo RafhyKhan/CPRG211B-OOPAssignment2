@@ -1,5 +1,8 @@
 package sait.mms.problemdomain;
 
+
+
+//SUV class for the SUV vehicle types. Subclass of Vehicle class, overrides the toString method, and toFileFormat.
 public class SUV extends Vehicle {
 	
 	

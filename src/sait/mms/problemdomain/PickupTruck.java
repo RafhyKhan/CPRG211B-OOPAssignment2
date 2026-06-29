@@ -1,5 +1,7 @@
 package sait.mms.problemdomain;
 
+
+//PickupTruck class for the PickupTruck vehicle types. Subclass of Vehicle class, overrides the toString method, and toFileFormat.
 public class PickupTruck extends Vehicle {
 
 	

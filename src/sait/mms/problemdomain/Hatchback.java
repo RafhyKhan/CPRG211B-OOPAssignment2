@@ -2,6 +2,7 @@ package sait.mms.problemdomain;
 
 
 
+//Hatchback class for the hatchback vehicle types. Subclass of Vehicle class, overrides the toString method, and toFileFormat.
 public class Hatchback extends Vehicle {
 
 	private String hatchBackType;

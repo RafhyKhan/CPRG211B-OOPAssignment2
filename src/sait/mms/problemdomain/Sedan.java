@@ -1,5 +1,9 @@
 package sait.mms.problemdomain;
 
+
+
+
+//Sedan class for the Sedan vehicle types. Subclass of Vehicle class, overrides the toString method, and toFileFormat.
 public class Sedan extends Vehicle {
 
 	

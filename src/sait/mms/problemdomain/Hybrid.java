@@ -1,5 +1,7 @@
 package sait.mms.problemdomain;
 
+
+//Hybrid class for the Hybrid vehicle types. Subclass of Vehicle class, overrides the toString method, and toFileFormat.
 public class Hybrid extends Vehicle {
 
 	
