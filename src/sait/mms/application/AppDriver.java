@@ -17,6 +17,12 @@ package sait.mms.application;
  * polymorphism, inheritance, Array-list of objects, scanner, file altering and other OOP topics. Outputs
  * were updated vehicle txt file, a console displaying results.
  * 
+ * 
+ * Peer Assessment:
+
+	Rafhy did the vehicle classes. Vehicle main class, and subclasses for Hybrid, Sedan, Hatchback, PickupTruck, SUV. 
+	Bruno did AppDriver which runs the program and VehicleManager which manages the menu, displaying vehicles in various ways, and creating of objects.
+ * 
  */
 import java.io.*;
 import java.util.Scanner;
