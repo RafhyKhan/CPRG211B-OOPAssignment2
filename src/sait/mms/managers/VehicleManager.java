@@ -107,7 +107,7 @@ public class VehicleManager {
 		}
 
 		found.setQuantity(found.getQuantity() - 1);
-		System.out.println("The Vehicle \"" + found.getVehicleType() + " "
+		System.out.println("\nThe Vehicle \"" + found.getVehicleType() + " "
 				+ found.getSubType() + "\" has been checked out.");
 	}
 
@@ -121,6 +121,7 @@ public class VehicleManager {
 		for (Vehicle v : vehicles) {
 			if (v.getVehicleType().equalsIgnoreCase(type)) {
 				System.out.println(v);
+				System.out.println(); //spacing
 				found = true;
 			}
 		}
@@ -169,7 +170,10 @@ public class VehicleManager {
 		for (Vehicle v : vehicles) {
 			if (v instanceof Sedan) {
 				Sedan s = (Sedan) v;
-				if (s.getTrunkSize().equalsIgnoreCase(code)) System.out.println(s);
+				if (s.getTrunkSize().equalsIgnoreCase(code)) {
+					System.out.println(s);
+					System.out.println();
+				}
 			}
 		}
 	}
@@ -181,7 +185,10 @@ public class VehicleManager {
 		for (Vehicle v : vehicles) {
 			if (v instanceof Hatchback) {
 				Hatchback h = (Hatchback) v;
-				if (h.getHatchBackType().equalsIgnoreCase(code)) System.out.println(h);
+				if (h.getHatchBackType().equalsIgnoreCase(code)) {
+					System.out.println(h);
+					System.out.println();
+				}
 			}
 		}
 	}
@@ -192,7 +199,10 @@ public class VehicleManager {
 		System.out.println("Matching Vehicles:");
 		for (Vehicle v : vehicles) {
 			if (v instanceof SUV) {
-				if (v.getDriveTrain().equalsIgnoreCase(code)) System.out.println(v);
+				if (v.getDriveTrain().equalsIgnoreCase(code)) {
+					System.out.println(v);
+					System.out.println();
+				}
 			}
 		}
 	}
@@ -204,7 +214,10 @@ public class VehicleManager {
 		for (Vehicle v : vehicles) {
 			if (v instanceof Hybrid) {
 				Hybrid h = (Hybrid) v;
-				if (h.getPowerTrain().equalsIgnoreCase(code)) System.out.println(h);
+				if (h.getPowerTrain().equalsIgnoreCase(code)) {
+					System.out.println(h);
+					System.out.println();
+				}
 			}
 		}
 	}
@@ -216,7 +229,10 @@ public class VehicleManager {
 		for (Vehicle v : vehicles) {
 			if (v instanceof PickupTruck) {
 				PickupTruck pt = (PickupTruck) v;
-				if (pt.getCargoBeds().equalsIgnoreCase(code)) System.out.println(pt);
+				if (pt.getCargoBeds().equalsIgnoreCase(code)) {
+					System.out.println(pt);
+					System.out.println();
+				}
 			}
 		}
 	}

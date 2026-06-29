@@ -35,13 +35,13 @@ public class Hybrid extends Vehicle {
 		
 		//Changing return value based on given trunk size.
 		switch(powerTrainUpper) {
-			case "L":
+			case "E":
 				powerTrainDescription = "Series Hybrid";
 				break;
-			case "S":
+			case "A":
 				powerTrainDescription = "Parallel Hybrid";
 				break;
-			case "M":
+			case "PHEV":
 				powerTrainDescription = "Plug-in Hybrid";
 				break;
 			default:
@@ -74,7 +74,9 @@ public class Hybrid extends Vehicle {
     @Override
     public String toFileFormat() {
         return String.join(";",
-            getCarId(), getVehicleType(), getSubType(),
+            getCarId(), 
+            getVehicleType(), 
+            getSubType(),
             String.valueOf(getSpeed()),
             String.valueOf(getFuel()),
             String.valueOf(getSeats()),

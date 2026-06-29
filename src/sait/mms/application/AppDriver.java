@@ -22,6 +22,7 @@ public class AppDriver {
 		boolean running = true;
 		while (running) {
 			printMenu();
+			System.out.println();
 			System.out.print("Enter option: ");
 			String choice = sc.nextLine().trim();
 

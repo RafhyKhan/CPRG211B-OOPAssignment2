@@ -30,14 +30,14 @@ public class Hatchback extends Vehicle {
 		
 		//Changing return value based on given trunk size.
 		switch(hatchBackTypeUpper) {
-			case "L":
-				hatchBackTypeDescription = "Series Hybrid";
-				break;
 			case "S":
-				hatchBackTypeDescription = "Parallel Hybrid";
+				hatchBackTypeDescription = "Standard Liftgate";
 				break;
-			case "M":
-				hatchBackTypeDescription = "Plug-in Hybrid";
+			case "T":
+				hatchBackTypeDescription = "Split Liftgate";
+				break;
+			case "P":
+				hatchBackTypeDescription = "Power Liftgate";
 				break;
 			default:
 				hatchBackTypeDescription = hatchBackType;
@@ -61,7 +61,9 @@ public class Hatchback extends Vehicle {
     @Override
     public String toFileFormat() {
         return String.join(";",
-            getCarId(), getVehicleType(), getSubType(),
+            getCarId(), 
+            getVehicleType(), 
+            getSubType(),
             String.valueOf(getSpeed()),
             String.valueOf(getFuel()),
             String.valueOf(getSeats()),

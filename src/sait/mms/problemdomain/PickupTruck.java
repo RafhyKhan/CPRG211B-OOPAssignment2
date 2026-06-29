@@ -34,13 +34,13 @@ public class PickupTruck extends Vehicle {
 		
 		//Changing return value based on given trunk size.
 		switch(cargoBedUpper) {
-			case "L":
+			case "SB":
 				cargoBedDescription = "Short Bed";
 				break;
-			case "S":
-				cargoBedDescription = "Extended bed";
+			case "EB":
+				cargoBedDescription = "Extended Bed";
 				break;
-			case "M":
+			case "DB":
 				cargoBedDescription = "Dump Bed";
 				break;
 			default:
@@ -74,7 +74,9 @@ public class PickupTruck extends Vehicle {
     public String toFileFormat() {
 	   
         return String.join(";",
-            getCarId(), getVehicleType(), getSubType(),
+            getCarId(), 
+            getVehicleType(), 
+            getSubType(),
             String.valueOf(getSpeed()),
             String.valueOf(getFuel()),
             String.valueOf(getSeats()),

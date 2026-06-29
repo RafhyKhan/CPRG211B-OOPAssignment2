@@ -37,7 +37,7 @@ public class Sedan extends Vehicle {
 		//Changing return value based on given trunk size.
 		switch(trunkSizeUpper) {
 			case "L":
-				trunkDescription = "Large/spacious Trunk";
+				trunkDescription =  "Large/spacious Trunk";
 				break;
 			case "S":
 				trunkDescription = "Small Trunk";
@@ -51,7 +51,7 @@ public class Sedan extends Vehicle {
 		
 		
 		//using common String so its in the right format. Than adding at the end, trunk Desciprtion
-		return commonToString() + String.format("%nTrunk Size: %s", trunkDescription);
+		return commonToString() + String.format("%nTrunk Size:  %s", trunkDescription);
 	}
 	
 	
@@ -60,7 +60,9 @@ public class Sedan extends Vehicle {
     @Override
     public String toFileFormat() {
         return String.join(";",
-            getCarId(), getVehicleType(), getSubType(),
+            getCarId(), 
+            getVehicleType(), 
+            getSubType(),
             String.valueOf(getSpeed()),
             String.valueOf(getFuel()),
             String.valueOf(getSeats()),

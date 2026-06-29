@@ -21,11 +21,13 @@ public class SUV extends Vehicle {
 	
 	
 	
-	//returning in proper format for file
+	//returning in proper format for file,
     @Override
     public String toFileFormat() {
         return String.join(";",
-            getCarId(), getVehicleType(), getSubType(),
+            getCarId(), 
+            getVehicleType(), 
+            getSubType(),
             String.valueOf(getSpeed()),
             String.valueOf(getFuel()),
             String.valueOf(getSeats()),
